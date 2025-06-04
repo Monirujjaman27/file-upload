@@ -1,0 +1,21 @@
+{
+    "name": "mj/fileupload",
+    "description": "MJ Laravel file upload helper.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md. Munirujjaman",
+            "email": "mdmunirujjaman079@gmail.com"
+        }
+    ],
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "MJ\\FileUpload\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    }
+}
