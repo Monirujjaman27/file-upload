@@ -7,7 +7,7 @@
 Run the following command to install the package:
 
 ```bash
-composer require mj/fileupload
+composer require mj07/fileupload
 ```
 
 ---
