@@ -1,36 +1,40 @@
-# File Upload For Laravel 
-<a  target="_blank" href="https://packagist.org/packages/monirujjaman27/unique-slug-generator">🚀 Package on packagist.org</a>
+# File Upload For Laravel
+
+<a  target="_blank" href="https://packagist.org/packages/monirujjaman27/file-upload">🚀 Package on packagist.org</a>
 
 ### 📌 Install via Composer
+
 Run the following command to install the package:
 
 ```bash
-composer require monirujjaman27/unique-slug-generator
+composer require mj/fileupload
 ```
+
 ---
 
 ## 🛠️ Requirement
 
-| Technology       | Version |
-| ---------------- | ------- |
-| **PHP**          | >=7.4   |
+| Technology | Version |
+| ---------- | ------- |
+| **PHP**    | >=7.4   |
 
 ---
 
 ## 🎨 Usage In Laravel
+
 ```php
 // import controller
-use Monirujjaman27\UniqueSlugGenerator\Facades\SlugGenerator;
-
+use FileUpload
 // Generate Slug
-dd(SlugGenerator::generate(\App\Models\User::class,'generate slug', 'name'));
+$filePath = FileUpload::upload($request->file('image'), 'uploads/images/');
+dd($filePath);
 ```
+
 #### 🎨 Output
+
 ```php
-generate-slug
+'uploads/images/file-name'
 ```
+
 ## 📌 Publish Vendor File
 
-```bash
-php artisan vendor:publish --provider="Monirujjaman27\UniqueSlugGenerator\SlugGeneratorServiceProvider"
-```
